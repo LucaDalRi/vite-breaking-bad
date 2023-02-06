@@ -1,20 +1,24 @@
 <script>
-import NomeApp from './components/HelloWorld.vue';
+import Header from './components/AppHeader.vue';
 
 export default {
   name: "App",
   components: {
-    NomeApp,
+    Header,
   }
 };
 </script>
 
 <template>
 
-  <NomeApp />
+  <Header />
 
 </template>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d48f38;
+}
 </style>
