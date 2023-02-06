@@ -1,10 +1,12 @@
 <script>
 import Header from './components/AppHeader.vue';
+import Navbar from './components/AppNavbar.vue'
 
 export default {
   name: "App",
   components: {
     Header,
+    Navbar,
   }
 };
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
 
   <Header />
+  <Navbar />
 
 </template>
 
