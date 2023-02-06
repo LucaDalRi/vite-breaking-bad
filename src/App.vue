@@ -1,12 +1,20 @@
 <script>
 import Header from './components/AppHeader.vue';
-import Navbar from './components/AppNavbar.vue'
+import Navbar from './components/AppNavbar.vue';
+import Main from './components/AppMain.vue'
 
 export default {
+
+  data() {
+    return {
+      response: [],
+    }
+  },
   name: "App",
   components: {
     Header,
     Navbar,
+    Main,
   }
 };
 </script>
@@ -15,12 +23,12 @@ export default {
 
   <Header />
   <Navbar />
+  <Main />
 
 </template>
 
 <style lang="scss">
 #app {
-  height: 100vh;
   width: 100vw;
   background-color: #d48f38;
 }
